@@ -1,7 +1,9 @@
 
 class Tooltip extends React.Component{
   constructior(props){
-
+    super(props)
+    this.state = {opacity:false}
+    this.toggle = this.toogle.bind(this)
   }
   toggle(){
 
