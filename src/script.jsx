@@ -9,6 +9,8 @@ class Tooltip extends React.Component{
     const tooltipNode = ReactDOM.findDOMNode(this)
     this.setState({
       opacity: !this.state.opacity,
+      top: tooltipNode.offsetTop,
+      left: tooltipNode.offsetLeft
     })
   }
   render(){
