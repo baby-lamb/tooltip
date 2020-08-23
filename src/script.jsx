@@ -20,7 +20,9 @@ class Tooltip extends React.Component{
       top: (this.state.top || 0) +20,
       left: (this.state.left || 0) -30
     }
-    return()
+    return(
+      <div></div>
+    )
   }
 
 }
