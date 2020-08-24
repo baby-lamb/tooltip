@@ -21,7 +21,10 @@ class Tooltip extends React.Component{
       left: (this.state.left || 0) -30
     }
     return(
-      <div></div>
+      <div>
+        <div></div>
+      </div>
+
     )
   }
 
