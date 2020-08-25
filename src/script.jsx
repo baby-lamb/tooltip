@@ -22,7 +22,7 @@ class Tooltip extends React.Component{
     }
     return(
       <div>
-        <div></div>
+      
       </div>
 
     )
