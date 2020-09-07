@@ -21,8 +21,16 @@ class Tooltip extends React.Component{
       left: (this.state.left || 0) -30
     }
     return(
-      <div>
-      
+      <div style={{display: 'inline'}}>
+        <span style={{color:'blue'}}
+          onMouseEnter={this.toggle}
+          {this.props.children}>
+        </span>
+        <div className="tooltip bottom" style={style} role="tooltip">
+        <div className="tooltip-arrow"></div>
+        <div className="tooltip-inner">
+          {this.props.text}
+        </div>
       </div>
 
     )
