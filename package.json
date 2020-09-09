@@ -4,8 +4,7 @@
   "dependencies": "",
   "main": "script.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel script.jsx -o script.js -w",
-    "start": "node script.jsx"
+    "build": "./node_modules/.bin/babel script.jsx -o script.js -w"
   },
   "author": "Azat Mardan",
   "license": "MIT",
@@ -15,7 +14,8 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "6.9.0",
-    "babel-preset-react": "6.5.0"
+    "babel-cli": "6.26.0",
+    "babel-preset-react": "6.24.1",
+    "webpack": "^4.44.1"
   }
 }
