@@ -16,7 +16,7 @@ class Tooltip extends React.Component {
     const style = {
       zIndex: this.state.opacity ? 1000 : -1000,
       opacity: +this.state.opacity,
-      top: (this.state.top || 0) + 20,
+      top: (this.state.top || 0) + 25,
       left: (this.state.left || 0) - 30
     };
     return React.createElement(
@@ -24,19 +24,19 @@ class Tooltip extends React.Component {
       { style: { display: 'inline' } },
       React.createElement(
         'span',
-        { style: { color: 'blue' }, onMouseEnter: this.toggle, onMouseOut: this.toggle },
+        { style: { color: 'Orange' }, onClick: this.toggle },
         this.props.children
       ),
       React.createElement(
         'div',
         { className: 'tooltip bottom', style: style, role: 'tooltip' },
-        React.createElement('div', { className: 'tooltip-arrow' }),
+        React.createElement('div', { className: 'tooltip arrow' }),
         React.createElement(
           'div',
           { className: 'tooltip-inner' },
           this.props.text
         )
-      )
+      ),
     );
   }
 }
